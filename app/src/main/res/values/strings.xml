@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Whole Sale</string>
+    <string name="Name">Name</string>
+    <string name="item_specifications">Item Specifications</string>
+    <string name="initial_stock">Current stock</string>
+    <string name="date">Date</string>
+</resources>

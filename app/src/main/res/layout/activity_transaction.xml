@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Transaction">
+
+    <AutoCompleteTextView
+        android:id="@+id/at_itemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Item Name"
+        android:inputType="textPersonName" />
+
+    <AutoCompleteTextView
+        android:id="@+id/at_customerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Customer Name"
+        android:inputType="textPersonName"
+        android:visibility="gone" />
+
+    <ToggleButton
+        android:id="@+id/at_inOutSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:text="ToggleButton"
+        android:textOff="IN"
+        android:textOn="Out" />
+
+    <EditText
+        android:id="@+id/at_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/date"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/at_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Time"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/at_currentStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Stock" />
+
+    <EditText
+        android:id="@+id/at_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Amount"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/at_memo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Memo"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addTransaction"
+        android:text="save" />
+</LinearLayout>
